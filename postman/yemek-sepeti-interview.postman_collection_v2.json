@@ -1,0 +1,118 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Yemek Sepeti",
+		"_postman_id": "dc2d6129-b5ee-bdd1-310c-18f68f01f255",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1/login",
+			"request": {
+				"url": "http://{{baseUrl}}/api/v1/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"faruk@email.com\",\n\t\"password\":\"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "v1/s/users",
+			"request": {
+				"url": "http://{{baseUrl}}/api/v1/s/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDQ0NDQxNDI4ODh9.l9mG2d6WyORQWODOxKDZS6d9x1l9RfluuGpZHUEl_UY",
+						"description": ""
+					},
+					{
+						"key": "x-key",
+						"value": "faruk@email.com",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "v1/s/user",
+			"request": {
+				"url": "http://{{baseUrl}}/api/v1/s/user/59a064d6f5b35a07e851a655",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDQzMzgzNDgxNTF9.Mukk5ZLmxwVMLXRp5WsB8pB45-WTOEzB2_XFUPUY3Ng",
+						"description": ""
+					},
+					{
+						"key": "x-key",
+						"value": "faruk@email.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"34334rererer\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "v1/s/user/update",
+			"request": {
+				"url": "http://{{baseUrl}}/api/v1/s/user/update",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MDQ1NjIxMzk2ODZ9.i2rk9KxySCRmCLIzzQ6qmLJItpA7Y4xS_qtWJo_LkoQ",
+						"description": ""
+					},
+					{
+						"key": "x-key",
+						"value": "faruk@email.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":\"59a064d6f5b35a07e851a655\",\n\t\"email\":\"faruk@email.com\",\n\t\"phone\":\"5376565501\",\n\t\"address\":\"Kazım\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
