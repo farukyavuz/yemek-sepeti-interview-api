@@ -22,7 +22,7 @@ Request samples are available in postman collection file.
                         
 ```java
 POST	api/v1/login
-GET		api/v1/s/users
-GET		api/v1/s/user/{userId}
+GET	api/v1/s/users
+GET	api/v1/s/user/{userId}
 POST	api/v1/s/user/update
 ```
