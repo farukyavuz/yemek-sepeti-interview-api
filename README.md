@@ -2,9 +2,9 @@
 
 Yemek sepeti interview restful api and cms.
 
-# URL
+# CMS URL
 
-**[https://http://188.226.130.164:3000](https://http://188.226.130.164:3000/)**
+**[https://http://188.226.130.164:3000](http://188.226.130.164:3000/)**
 
 # Postman Collection and Environment
 
